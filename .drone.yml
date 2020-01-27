@@ -26,3 +26,16 @@ steps:
     tags: latest
     dockerfile: ./growi-docker-compose/elasticsearch/Dockerfile
     context: ./growi-docker-compose/elasticsearch
+
+- name: build-kompose
+  image: plugins/docker
+  settings:
+    username:
+      from_secret: docker_username
+    password:
+      from_secret: docker_password
+    repo: yaamai/kompose
+    tags: latest
+    dockerfile: ./kompose/Dockerfile
+    context: ./kompose/elasticsearch
+
