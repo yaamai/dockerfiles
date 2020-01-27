@@ -2,6 +2,11 @@ kind: pipeline
 name: default
 
 steps:
+- name: submodules
+  image: alpine/git
+  commands:
+  - git submodule update --recursive --remote
+
 - name: test
   image: alpine
   commands:
@@ -9,11 +14,6 @@ steps:
   - "env"
   - "ls"
   - "ls -alR"
-
-- name: submodules
-  image: alpine/git
-  commands:
-  - git submodule update --recursive --remote
 
 - name: build-growi-es
   image: plugins/docker
