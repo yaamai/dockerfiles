@@ -4,7 +4,7 @@ name: default
 steps:
 - name: test
   image: alpine
-  scripts:
+  commands:
   - "pwd"
   - "env"
   - "ls"
