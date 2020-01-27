@@ -24,5 +24,5 @@ steps:
       from_secret: docker_password
     repo: yaamai/growi-elasticsearch
     tags: latest
-    dockerfile: Dockerfile
+    dockerfile: ./growi-docker-compose/elasticsearch/Dockerfile
     context: ./growi-docker-compose/elasticsearch
