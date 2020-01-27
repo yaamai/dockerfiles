@@ -37,5 +37,5 @@ steps:
     repo: yaamai/kompose
     tags: latest
     dockerfile: ./kompose/Dockerfile
-    context: ./kompose/elasticsearch
+    context: ./kompose
 
