@@ -8,6 +8,13 @@ steps:
   - "pwd"
   - "env"
   - "ls"
+  - "ls -alR"
+
+- name: submodules
+  image: alpine/git
+  commands:
+  - git submodule update --recursive --remote
+
 - name: build-growi-es
   image: plugins/docker
   settings:
