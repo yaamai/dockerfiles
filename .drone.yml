@@ -2,6 +2,12 @@ kind: pipeline
 name: default
 
 steps:
+- name: test
+  image: alpine
+  scripts:
+  - "pwd"
+  - "env"
+  - "ls"
 - name: build-growi-es
   image: plugins/docker
   settings:
