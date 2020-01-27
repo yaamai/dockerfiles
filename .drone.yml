@@ -18,4 +18,4 @@ steps:
     repo: yaamai/growi-elasticsearch
     tags: latest
     dockerfile: Dockerfile
-    context: growi-docker-compose/elasticsearch
+    context: ./growi-docker-compose/elasticsearch
