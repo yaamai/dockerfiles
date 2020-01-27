@@ -1,0 +1,3 @@
+[submodule "growi-docker-compose"]
+	path = growi-docker-compose
+	url = https://github.com/weseek/growi-docker-compose.git

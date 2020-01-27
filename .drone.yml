@@ -1,0 +1,13 @@
+kind: pipeline
+name: default
+
+steps:
+- name: build-growi-es
+  image: plugins/docker
+  settings:
+    username: kevinbacon
+    password: pa55word
+    repo: yaamai/growi-elasticsearch
+    tags: latest
+    dockerfile: Dockerfile
+    context: growi-docker-compose/elasticsearch
