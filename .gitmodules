@@ -3,4 +3,4 @@
 	url = https://github.com/weseek/growi-docker-compose.git
 [submodule "kompose"]
 	path = kompose
-	url = https://github.com/kubernetes/kompose
+	url = https://github.com/weseek/growi-docker-compose.git
