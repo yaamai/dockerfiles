@@ -38,4 +38,3 @@ steps:
     tags: latest
     dockerfile: ./kompose/Dockerfile
     context: ./kompose
-
