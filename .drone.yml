@@ -38,3 +38,15 @@ steps:
     tags: latest
     dockerfile: ./kompose/Dockerfile
     context: ./kompose
+
+- name: build-upx
+  image: plugins/docker
+  settings:
+    username:
+      from_secret: docker_username
+    password:
+      from_secret: docker_password
+    repo: yaamai/upx
+    tags: latest
+    dockerfile: ./upx/Dockerfile
+    context: ./upx
